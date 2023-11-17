@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html class="dark-mode" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>$BEN Coin Collective: Accelerating Crypto Adoption</title>
+    <!-- SEO Meta Tags -->
+    <meta content="The $BEN Coin Collective bridges the gap between everyday people and the world of crypto. By prioritizing education, advocacy, transparency, and representation, we aim for a future where digital assets are understood, used, and valued. Get involved in our community, trade $BEN, or check out our roadmap to learn more."
+        name="description" />
+    <meta content="Bitboy, BEN Coin, $BEN, Ethereum, Token, cryptocurrency, blockchain, crypto adoption, crypto education, digital currency, decentralization, staking, locking, governance token, DeFi, decentralized finance, crypto community, crypto transparency, crypto representation, crypto trading, crypto advocacy"
+        name="keywords" />
+    <meta content="russfranky" name="author" />
+    <!-- Viewport -->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- Favicon and Touch Icons -->
+    <link href="./assets/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+    <link href="./assets/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="./assets/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+    <link href="./assets/favicon/safari-pinned-tab.svg" rel="mask-icon" />
+    <meta content="#000000" name="msapplication-TileColor" />
+    <meta content="#000000" name="theme-color" />
+    <!-- Open Graph Meta Tags -->
+    <meta content="Join BEN Coin - Accelerating Crypto Adoption & Empowering Retail Investors" property="og:title" />
+    <meta content="website" property="og:type" />
+    <meta content="https://www.joinbencoin.com/" property="og:url" />
+    <meta content="https://www.joinbencoin.com/assets/img/BasicOG.png" property="og:image" />
+    <meta content="Join BEN Coin, a utility coin for governance that's empowering retail investors and accelerating cryptocurrency adoption worldwide. Get involved today!" property="og:description" />
+    <!-- Twitter-specific tags -->
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="Join BEN Coin - Accelerating Crypto Adoption & Empowering Retail Investors" name="twitter:title" />
+    <meta content="Join BEN Coin, a utility coin for governance that's empowering retail investors and accelerating cryptocurrency adoption worldwide. Get involved today!" name="twitter:description" />
+    <meta content="https://www.joinbencoin.com/assets/img/TwitterOG.png" name="twitter:image" />
+    <meta content="https://www.joinbencoin.com/" name="twitter:url" />
+    <!-- Vendor Styles -->
+    <link href="./assets/vendor/boxicons/css/boxicons.min.css" media="screen" rel="stylesheet" />
+    <link href="./assets/vendor/swiper/swiper-bundle.min.css" media="screen" rel="stylesheet" />
+    <link href="./assets/vendor/lightgallery/css/lightgallery-bundle.min.css" media="screen" rel="stylesheet" />
+    <!-- Custom Styles + Bootstrap -->
+    <link href="./assets/css/custom.css" media="screen" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/13521c25a7.js" crossorigin="anonymous"></script>
+    <!-- Page loading styles -->
+
+    <style>
+        .page-loading {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            -webkit-transition: all 0.4s 0.2s ease-in-out;
+            transition: all 0.4s 0.2s ease-in-out;
+            background-color: #fff;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 9999;
+        }
+
+        .dark-mode .page-loading {
+            background-color: #000000;
+        }
+
+        .page-loading.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .page-loading-inner {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -webkit-transition: opacity 0.2s ease-in-out;
+            transition: opacity 0.2s ease-in-out;
+            opacity: 0;
+        }
+
+        .page-loading.active>.page-loading-inner {
+            opacity: 1;
+        }
+
+        .page-loading-inner>span {
+            display: block;
+            font-size: 1rem;
+            font-weight: normal;
+            color: #9397ad;
+        }
+
+        .dark-mode .page-loading-inner>span {
+            color: #fff;
+            opacity: 0.6;
+        }
+
+        .page-spinner {
+            display: inline-block;
+            width: 2.75rem;
+            height: 2.75rem;
+            margin-bottom: 0.75rem;
+            vertical-align: text-bottom;
+            border: 0.15em solid #b4b7c9;
+            border-right-color: transparent;
+            border-radius: 50%;
+            -webkit-animation: spinner 0.75s linear infinite;
+            animation: spinner 0.75s linear infinite;
+        }
+
+        .dark-mode .page-spinner {
+            border-color: rgba(255, 255, 255, 0.4);
+            border-right-color: transparent;
+        }
+
+        @-webkit-keyframes spinner {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spinner {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <!-- Page loading scripts -->
+    <script>
+        (function() {
+            window.onload = function() {
+                const preloader = document.querySelector(".page-loading");
+                preloader.classList.remove("active");
+                setTimeout(function() {
+                    preloader.remove();
+                }, 1000);
+            };
+        })();
+    </script>
+</head>
+<!-- Body -->
+
+<body>
+    <!-- Launch dApp Modal -->
+    <!-- <div aria-hidden="true" aria-labelledby="dappLabel" class="modal fade" id="dappModal" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content sm-modal-pad">
+				<div class="modal-header pb-1">
+					<h4 class="modal-title" id="dappModalLabel"><i class="bx bx-rocket text-gradient-primary"></i> Coming Soon!</h4>
+				</div>
+				<div class="modal-body">
+					<p>Sign up below to secure early access in the upcoming $BEN Coin dApp.</p>
+					<form action="https://script.google.com/macros/s/AKfycbwVmoeUnqGgn-OJatQcYTrI6l5tDfhXgiB5qt6xAKGb8aJnAB-XziM47bamVhPzlmhE/exec" class="needs-validation" id="signup-form" method="post" name="signup-form" novalidate="">
+						<div class="mb-3">
+							<label class="form-label fs-base" for="email-input">Email Address</label> 
+                            <input class="form-control form-control form-control-lg" id="email-input" name="email" placeholder="email@example.com" required="" type="email">
+							<div class="invalid-feedback">
+								Please enter a valid email address.
+							</div>
+						</div>
+						<div class="mb-3">
+							<div class="form-check">
+								<input class="form-check-input" id="terms" name="terms" type="checkbox"> 
+                                <label class="form-check-label fs-base" for="terms">Also subscribe to the monthy $BEN Newsletter</label>
+							</div>
+						</div>
+						<div class="modal-footer pb-4 pt-1">
+							<button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button> 
+                            <button class="btn btn-primary" type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div> -->
+    <!-- News Letter-->
+    <div aria-hidden="true" aria-labelledby="newsLetterModalLabel" class="modal fade" id="newsLetterModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content sm-modal-pad">
+                <div class="modal-header pb-1">
+                    <h4 class="modal-title" id="newsLetterModalLabel">
+                        <i class="bx bx-news text-gradient-primary"></i> Stay Updated
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <p>Sign up below to to keep updated with our newsletter.</p>
+                    <div id="mc_embed_shell">
+                        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css" />
+                        <style type="text/css">
+                            #mc_embed_signup {
+                                background: transparent;
+                                false;
+                                clear: left;
+                                width: 100%;
+                            }
+
+                            /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                        </style>
+                        <div id="mc_embed_signup">
+                            <form action="https://joinbencoin.us21.list-manage.com/subscribe/post?u=94b2f8fafda6b967201d0923c&amp;id=a274336670&amp;f_id=0005e3e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                                <div id="mc_embed_signup_scroll">
+                                    <h2>Subscribe</h2>
+                                    <div class="indicates-required">
+                                        <span class="asterisk">*</span> indicates required
+                                    </div>
+                                    <div class="mc-field-group">
+                                        <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label
+                      ><input
+                        type="email"
+                        name="EMAIL"
+                        class="required email"
+                        id="mce-EMAIL"
+                        required=""
+                        value=""
+                      />
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-FNAME"
+                        >First Name <span class="asterisk">*</span></label
+                      ><input
+                        type="text"
+                        name="FNAME"
+                        class="required text"
+                        id="mce-FNAME"
+                        required=""
+                        value=""
+                      />
+                    </div>
+                    <div class="mc-field-group input-group">
+                      <strong
+                        >What are you most interested in?
+                        <span class="asterisk">*</span></strong
+                      >
+                      <ul>
+                        <li>
+                          <input
+                            type="radio"
+                            name="MMERGE6"
+                            id="mce-MMERGE60"
+                            value="Crypto News"
+                          /><label for="mce-MMERGE60">Crypto News</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="MMERGE6" id="mce-MMERGE61" value="Crypto Education" /><label for="mce-MMERGE61">Crypto Education</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="MMERGE6" id="mce-MMERGE62" value="Crypto Trading" /><label for="mce-MMERGE62">Crypto Trading</label>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                    <div id="mce-responses" class="clear foot">
+                                        <div class="response" id="mce-error-response" style="display: none"></div>
+                                        <div class="response" id="mce-success-response" style="display: none"></div>
+                                    </div>
+                                    <div aria-hidden="true" style="position: absolute; left: -5000px">
+                                        /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                                        <input type="text" name="b_94b2f8fafda6b967201d0923c_a274336670" tabindex="-1" value="" />
+                                    </div>
+                                    <div class="optionalParent">
+                                        <div class="clear foot">
+                                            <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe" />
+                                            <p style="margin: 0px auto">
+                                                <a href="https:joinbencoin.com" title="Join BENCOIN"><span
+                              style="
+                                display: inline-block;
+                                background-color: transparent;
+                                border-radius: 4px;
+                              "
+                              ><img
+                                class="refferal_badge"
+                                src="./assets/img/logo.svg"
+                                alt="BENCOIN"
+                                style="
+                                  width: 220px;
+                                  height: 40px;
+                                  display: flex;
+                                  padding: 2px 0px;
+                                  justify-content: center;
+                                  align-items: center;
+                                " /></span
+                          ></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+                        <script type="text/javascript">
+                            (function($) {
+                                window.fnames = new Array();
+                                window.ftypes = new Array();
+                                fnames[0] = "EMAIL";
+                                ftypes[0] = "email";
+                                fnames[1] = "FNAME";
+                                ftypes[1] = "text";
+                                fnames[6] = "MMERGE6";
+                                ftypes[6] = "radio";
+                                fnames[2] = "LNAME";
+                                ftypes[2] = "text";
+                                fnames[3] = "ADDRESS";
+                                ftypes[3] = "address";
+                                fnames[4] = "PHONE";
+                                ftypes[4] = "phone";
+                                fnames[5] = "BIRTHDAY";
+                                ftypes[5] = "birthday";
+                            })(jQuery);
+                            var $mcj = jQuery.noConflict(true);
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Success Toast -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div aria-atomic="true" aria-live="assertive" class="toast" data-bs-autohide="false" id="successToast" role="alert">
+            <div class="toast-header">
+                <img alt="Bell" class="rounded me-2" src="./assets/img/logo.svg" />
+                <strong class="me-auto">Nice one!</strong>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="toast" type="button"></button>
+            </div>
+            <div class="toast-body">
+                You successfully signed up to the $BEN Newsletter
+            </div>
+        </div>
+    </div>
+    <!-- Exchange Modal -->
+    <div aria-hidden="true" aria-labelledby="exchangeModalLabel" class="modal fade" id="exchangeModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content sm-modal-pad">
+                <div class="modal-header pt-4 pb-1">
+                    <h5 class="modal-title">Exchanges</h5>
+                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                </div>
+                <div class="modal-body pb-4">
+                    <!-- Uniswap Exchange Data -->
+                    <div class="py-3 border-bottom">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <img alt="Uniswap" src="./assets/img/homepage/uniswap.svg" width="32" />
+                                <h4 class="ps-3 mb-0">Uniswap</h4>
+                                <h6 class="opacity-60 ps-2 mb-0 mb-0 mt-1 exchange-type">
+                                    DEX
+                                </h6>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <h6 class="mb-0 mb-0 mt-1 me-4 d-none d-sm-block">
+                                    ETH / BEN
+                                </h6>
+                                <a class="btn btn-sm btn-outline-secondary fs-sm" href="https://app.uniswap.org/tokens/ethereum/0xdcc97d2c1048e8f3f2fc58ace9024ab8b350e4b1" target="_blank">Trade</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Bitget Data -->
+            <!-- <div class="py-3 border-bottom">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <img
+                    alt="Bitget"
+                    src="./assets/img/trade/logos/bitget.svg"
+                    width="32"
+                  />
+                  <h4 class="ps-3 mb-0">Bitget</h4>
+                  <h6 class="opacity-60 ps-2 mb-0 mb-0 mt-1 exchange-type">
+                    CEX
+                  </h6>
+                </div>
+                <div class="d-flex align-items-center">
+                  <h6 class="mb-0 mb-0 mt-1 me-4 d-none d-sm-block">
+                    BEN / USDT
+                  </h6>
+                  <a
+                    class="btn btn-sm btn-outline-secondary fs-sm"
+                    href="https://www.bitget.com/en/spot/BENUSDT_SPBL?type=spot"
+                    target="_blank"
+                    >Trade</a
+                  >
+                </div>
+              </div>
+            </div> -->
+            <!-- MEXC Exchange Data -->
+            <!-- <div class="py-3 border-bottom">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <img
+                    alt="MEXC"
+                    src="./assets/img/trade/logos/mexc.svg"
+                    width="32"
+                  />
+                  <h4 class="ps-3 mb-0">MEXC</h4>
+                  <h6 class="opacity-60 ps-2 mb-0 mb-0 mt-1 exchange-type">
+                    CEX
+                  </h6>
+                </div>
+                <div class="d-flex align-items-center">
+                  <h6 class="mb-0 mb-0 mt-1 me-4 d-none d-sm-block">
+                    BEN / USDT
+                  </h6>
+                  <a
+                    class="btn btn-sm btn-outline-secondary fs-sm"
+                    href="https://www.mexc.com/exchange/BEN_USDT"
+                    target="_blank"
+                    >Trade</a
+                  >
+                </div>
+              </div>
+            </div> -->
+            <!-- Bitmart Exchange Data -->
+            <!-- <div class="py-3 border-bottom">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <img
+                    alt="Bitmart"
+                    src="./assets/img/trade/logos/bitmart.svg"
+                    width="32"
+                  />
+                  <h4 class="ps-3 mb-0">Bitmart</h4>
+                  <h6 class="opacity-60 ps-2 mb-0 mb-0 mt-1 exchange-type">
+                    CEX
+                  </h6>
+                </div>
+                <div class="d-flex align-items-center">
+                  <h6 class="mb-0 mb-0 mt-1 me-4 d-none d-sm-block">
+                    BEN / USDT
+                  </h6>
+                  <a
+                    class="btn btn-sm btn-outline-secondary fs-sm"
+                    href="https://www.bitmart.com/trade/en-US?symbol=BEN_USDT&layout=pro"
+                    target="_blank"
+                    >Trade</a
+                  >
+                </div>
+              </div>
+            </div> -->
+            <!-- LBank Exchange Data -->
+            <!-- <div class="py-3 border-bottom">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <img
+                    alt="LBank"
+                    src="./assets/img/trade/logos/lbank.svg"
+                    width="32"
+                  />
+                  <h4 class="ps-3 mb-0">LBank</h4>
+                  <h6 class="opacity-60 ps-2 mb-0 mb-0 mt-1 exchange-type">
+                    CEX
+                  </h6>
+                </div>
+                <div class="d-flex align-items-center">
+                  <h6 class="mb-0 mb-0 mt-1 me-4 d-none d-sm-block">
+                    BEN / USDT
+                  </h6>
+                  <a
+                    class="btn btn-sm btn-outline-secondary fs-sm"
+                    href="https://www.lbank.com/en-US/trade/ben_usdt/"
+                    target="_blank"
+                    >Trade</a
+                  >
+                </div>
+              </div>
+            </div> -->
+            <!-- Poloniex Exchange Data -->
+            <!-- <div class="py-3">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <img
+                    alt="Poloniex"
+                    src="./assets/img/homepage/poloniex.svg"
+                    width="32"
+                  />
+                  <h4 class="ps-3 mb-0">Poloniex</h4>
+                  <h6 class="opacity-60 ps-2 mb-0 mb-0 mt-1 exchange-type">
+                    CEX
+                  </h6>
+                </div>
+                <div class="d-flex align-items-center">
+                  <h6 class="mb-0 mb-0 mt-1 me-4 d-none d-sm-block">
+                    BEN / USDT
+                  </h6>
+                  <a
+                    class="btn btn-sm btn-outline-secondary fs-sm"
+                    href="https://poloniex.com/trade/BEN_USDT/?type=spot"
+                    target="_blank"
+                    >Trade</a
+                  >
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+    <main class="page-wrapper">
+      <!-- Navbar -->
+      <header
+        class="header navbar navbar-expand-lg position-absolute navbar-sticky"
+      >
+        <div class="container px-3">
+          <a class='navbar-brand pe-xl-3' href='/'>
+            <img alt="BENCOIN" src="./assets/img/logo.svg" width="34" />
+            <span class="ben-text">BEN</span>
+            <span class="coin-text">COIN</span>
+          </a>
+                                <div class="offcanvas offcanvas-end" id="navbarNav">
+                                    <div class="offcanvas-header border-bottom">
+                                        <h5 class="offcanvas-title">Menu</h5>
+                                        <button aria-label="Close" class="btn-close" data-bs-dismiss="offcanvas" type="button"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                            <li class="nav-item">
+                                                <a class='nav-link' href='/foundation'>Foundation</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class='nav-link' href='/community'>Community</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class='nav-link' href='/news'>News & Updates</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class='nav-link' href='/faqs'>FAQs</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="interact-button offcanvas-header border-top pb-0"><i class="bx bx-world fs-4 lh-1 me-1"></i> &nbsp;Launch App
+            </div>
+            <div class="offcanvas-header">
+              <a
+                class="btn btn-primary w-100"
+                data-bs-target="#exchangeModal"
+                data-bs-toggle="modal"
+                href=""
+                ><i class="bx bx-transfer fs-4 lh-1 me-1"></i> &nbsp;Trade
+                $BEN</a
+              >
+              <a
+                class="btn btn-gradient w-100 my-4"
+                href=""
+                data-bs-toggle="modal"
+                data-bs-target="#newsLetterModal"
+              >
+                <i class="bx bx-news fs-5 lh-1 me-1"></i> &nbsp;Stay Updated</a
+              >
+            </div>
+          </div>
+          <button
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler"
+            data-bs-target="#navbarNav"
+            data-bs-toggle="offcanvas"
+            type="button"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <span
+            class="interact-button  btn-secondary btn-sm fs-sm rounded d-none d-lg-inline-flex me-3"
+            href="https://benfi.io/"
+            target="_blank"
+          >
+            <i class="bx bx-world fs-5 lh-1 me-1"></i> &nbsp;Launch App
+        </span>
+                                        <span class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" data-bs-toggle="modal" href="">
+            <i class="bx bx-transfer fs-5 lh-1 me-1"></i> &nbsp;Trade $BEN
+                                        </span>
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#newsLetterModal" class="btn btn-gradient btn-sm fs-sm rounded d-none d-lg-inline-flex mx-3">
+            <i class="bx bx-news fs-5 lh-1 me-1"></i> &nbsp;Stay Updated
+          </a>
+                                    </div>
+                                    </header>
+                                    <!-- Hero -->
+                                    <section class="jarallax position-relative d-flex align-items-center min-vh-100 bg-light py-lg-5 pt-5" data-img-position="0% 100%" data-jarallax="" data-speed="0.5" style="background-image: url(assets/img/homepage/hero-bg1.svg)">
+                                        <div class="container position-relative zindex-5 py-5">
+                                            <div class="row justify-content-md-start justify-content-center">
+                                                <div class="col-md-6 col-sm-8 order-md-1 order-2 d-flex flex-column justify-content-between mt-4 pt-2 text-md-start text-center">
+                                                    <div class="mb-md-5 pb-xl-5 mb-4">
+                                                        <h1 class="display-2 mb-md-5 mb-3 pb-3">
+                                                            Pioneering Global Crypto
+                                                            <span class="text-gradient-primary">Adoption</span>
+                                                        </h1>
+                                                        <span class="interact-button btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" data-bs-toggle="modal" href="">
+                                                          <i class="bx bx-transfer fs-5 lh-1 me-1"></i> &nbsp;Connect Wallet
+                                                                                      </span>
+                                                       <br/><br />
+                                                        <div class="d-md-flex align-items-md-start">
+                                                            <p class="d-lg-block d-none mb-0 ps-md-3">
+                                                                We envision a future where cryptocurrency is universally accepted and seamlessly integrated into our daily lives. We are committed to promoting pro-crypto regulations, enabling unbiased crypto news, and making crypto education accessible for everyone.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex flex-wrap d-inline-flex align-items-center justify-content-center justify-content-md-start position-relative">
+                                                        <a class="btn btn-icon btn-secondary btn-twitter rounded-circle mx-2 mb-2" href="https://twitter.com/joinBENCoin">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                                                        <a class="btn btn-icon btn-secondary btn-discord rounded-circle mx-2 mb-2" href="https://discord.gg/joinbencoin" target="_blank">
+                  <i class="bx bxl-discord"></i>
+                </a>
+                                                        <a class="btn btn-icon btn-secondary btn-telegram rounded-circle mx-2 mb-2" href="https://t.me/JoinBenCoinOfficial" target="_blank">
+                  <i class="bx bxl-telegram"></i>
+                </a>
+                                                        <a class="btn btn-icon btn-secondary btn-instagram rounded-circle mx-2 mb-2" href="https://www.instagram.com/joinbencoin/" target="_blank">
+                  <i class="bx bxl-instagram"></i>
+                </a>
+                                                        <a class="btn btn-icon btn-secondary btn-facebook rounded-circle mx-2 mb-2" href="https://www.facebook.com/joinbencoin/" target="_blank">
+                  <i class="bx bxl-facebook"></i>
+                </a>
+                                                        <a class="btn btn-icon btn-secondary btn-linkedin rounded-circle mx-2 mb-2" href="https://www.linkedin.com/company/joinbencoin/" target="_blank">
+                  <i class="bx bxl-linkedin"></i>
+                </a>
+                                                        <a class="btn btn-icon btn-secondary btn-medium rounded-circle mx-2 mb-2" href="https://medium.com/@joinbencoin" target="_blank">
+                  <i class="bx bxl-medium"></i>
+                </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-sm-6 col-9 order-md-2 order-1">
+                                                    <img alt="World" src="./assets/img/homepage/world.svg" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="container pt-3 pb-4 pb-md-5 ">
+
+                                        <div class="bg-gradient-primary-translucent rounded-3 overflow-hidden">
+                                            <div class="row align-items-center py-5">
+                                                <div class="col-xl-4 col-md-5 offset-lg-1">
+                                                    <div class="pt-5 pb-3 pb-md-5 pb-lg-0 px-4 px-lg-0 px-xl-0 text-center text-md-start">
+                                                        <h1 class="merch-text pb-sm-4">
+                                                            Its a new beginning for <span class="text-primary">$BEN.</span><br />
+                                                        </h1>
+                                                        <p class="merch-text pb-3 pb-sm-4">
+                                                            V2 is now live and we have a new contract address, <strong>MIGRATE NOW!</strong>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-7 offset-xl-1">
+                                                    <div class="position-relative d-flex flex-column align-items-center justify-content-center h-100">
+                                                        <svg class="d-none d-md-block position-absolute top-50 start-0 translate-middle-y" height="868" style="min-width: 868px" viewbox="0 0 868 868" width="868" xmlns="http://www.w3.org/2000/svg">
+                    <circle
+                      cx="434"
+                      cy="434"
+                      fill="#DC662F"
+                      opacity=".20"
+                      r="434"
+                    ></circle>
+                  </svg>
+                                                        <img alt="merch" class="position-relative zindex-3 mb-2 my-lg-4 w-25 h-25" src="./assets/img/homepage/migrate_v2.png" />
+                                                        <p class="text-white zindex-5 contract-address mb-0">Official Contract Address:</p>
+                                                        <strong class="text-white zindex-5 contract-address">
+                    <p class="text-white zindex-5 contract-address">0xdcc97D2C1048e8F3F2Fc58ACE9024AB8b350e4B1</p>
+                  </strong>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Get involved + Top Up -->
+                                    <section class="position-relative py-0 py-sm-3 py-md-4 py-lg-5">
+                                        <div class="bg-gradient-primary position-absolute top-0 start-0 w-50 h-100 opacity-15 d-none d-lg-block"></div>
+                                        <div class="bg-gradient-primary position-absolute top-0 start-0 w-100 form-bg-height opacity-15 d-lg-none"></div>
+                                        <div class="bg-dark position-absolute top-0 end-0 w-50 h-100 d-none d-lg-block"></div>
+                                        <div class="container position-relative zindex-2 pt-5 pt-lg-0 my-md-2 my-lg-3">
+                                            <div class="row align-items-center g-0">
+                                                <div class="col-md-12 col-lg-6">
+                                                    <div class="bg-light position-relative overflow-hidden rounded-3 shadow px-3 form-mw mb-5 mb-lg-0">
+                                                        <div class="h-100 position-absolute start-0 top-0 w-100" style="background-color: rgba(255, 255, 255, 0.04)"></div>
+                                                        <div class="position-relative zindex-2 py-5 px-2 px-sm-3 px-md-4 px-lg-5">
+                                                            <h3 class="h2">Get Involved</h3>
+                                                            <p>
+                                                                BEN is a grassroots movement, join us in accelerating crypto adoption:
+                                                            </p>
+                                                            <div class="form-check mb-3">
+                                                                <input class="form-check-input me-2" data-href="https://3l97emzg8w4.typeform.com/to/blrYs3nq?typeform-source=linktr.ee" id="check-2" name="options" type="radio" />
+                                                                <label class="form-check-label fs-lg mt-n1" for="check-2">Apply to be an Advisor</label
+                    >
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      checked
+                      class="form-check-input me-2"
+                      data-href="https://3l97emzg8w4.typeform.com/to/Cc6yh3vU?typeform-source=linktr.ee"
+                      id="check-3"
+                      name="options"
+                      type="radio"
+                    />
+                    <label class="form-check-label fs-lg mt-n1" for="check-3"
+                      >Submit a Partnership Proposal</label
+                    >
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input me-2"
+                      data-href="https://3l97emzg8w4.typeform.com/to/PPI0nmHR"
+                      id="check-1"
+                      name="options"
+                      type="radio"
+                    />
+                    <label class="form-check-label fs-lg mt-n1" for="check-1"
+                      >Volunteer with Us</label
+                    >
+                  </div>
+                  <div class="d-flex pt-4 pt-lg-5 mt-4">
+                    <button
+                      class="btn btn-lg btn-primary ms-auto"
+                      id="openFormButton"
+                      type="button"
+                    >
+                      Open Request Form
+                      <i class="bx bx-link-external fs-lg me-n1 ms-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-5 mb-4 mb-md-0 offset-lg-1 order-md-2 text-center text-md-start pt-2 pt-lg-0 mt-5 mt-lg-0"
+            >
+              <h2 class="h2 pb-2 pb-lg-3">Top up your $BEN bags 💰</h2>
+              <p class="pb-2 mb-4 mb-xl-5">
+                Show your support and become a more significant part of our
+                mission. Every $BEN you hodl directly contributes to our efforts
+                to advocate for transparency, education, and inclusivity in the
+                crypto space.
+              </p>
+              <hr />
+              <div
+                class="d-flex justify-content-between justify-content-md-start pt-3 pb-2 pb-md-4 exchange-links"
+              >
+                <a
+                  class="d-block me-3"
+                  href="https://app.uniswap.org/tokens/ethereum/0xdcc97d2c1048e8f3f2fc58ace9024ab8b350e4b1"
+                  ><img
+                    alt="Uniswap"
+                    src="./assets/img/homepage/uniswap.svg"
+                    width="48"
+                /></a>
+                <!-- <a
+                  class="d-block mx-3"
+                  href="ttps://www.bitget.com/spot/BENUSDT"
+                  ><img
+                    alt="Bitget"
+                    src="./assets/img/homepage/bitget.svg"
+                    width="48"
+                /></a>
+                <a
+                  class="d-block mx-3"
+                  href="ttps://www.mexc.com/exchange/BEN_USDT"
+                  ><img
+                    alt="MEXC"
+                    src="./assets/img/homepage/mexc.svg"
+                    width="48"
+                /></a>
+                <a
+                  class="d-block mx-3"
+                  href="ttps://www.bitmart.com/trade/en-US?symbol=BEN_USDT"
+                  ><img
+                    alt="Bitmart"
+                    src="./assets/img/homepage/bitmart.svg"
+                    width="48"
+                /></a>
+                <a
+                  class="d-block mx-3"
+                  href="ttps://www.lbank.com/trade/ben_usdt/"
+                  ><img
+                    alt="LBank"
+                    src="./assets/img/homepage/lbank.svg"
+                    width="48"
+                /></a>
+                <a
+                  class="d-block ms-3"
+                  href="ttps://poloniex.com/trade/BEN_USDT/?type=spot"
+                  ><img
+                    alt="Poloniex"
+                    src="./assets/img/homepage/poloniex.svg"
+                    width="48"
+                /></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="position-absolute end-0 bottom-0 d-md-none d-lg-block text-primary"
+        >
+          <svg
+            height="444"
+            viewbox="0 0 416 444"
+            width="416"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M240.875 615.746C389.471 695.311 562.783 640.474 631.69 504.818C700.597 369.163 645.201 191.864 496.604 112.299C348.007 32.7335 174.696 87.5709 105.789 223.227C36.8815 358.882 92.278 536.18 240.875 615.746ZM208.043 680.381C388.035 776.757 605.894 713.247 694.644 538.527C783.394 363.807 709.428 144.04 529.436 47.6636C349.443 -48.7125 131.584 14.7978 42.8343 189.518C-45.916 364.238 28.0504 584.005 208.043 680.381Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+              opacity="0.01"
+            ></path>
+            <path
+              clip-rule="evenodd"
+              d="M262.68 572.818C382.909 637.194 526.686 594.13 584.805 479.713C642.924 365.295 595.028 219.601 474.799 155.224C354.57 90.8479 210.793 133.912 152.674 248.33C94.5545 362.747 142.45 508.442 262.68 572.818ZM253.924 590.054C382.526 658.913 538.182 613.536 601.593 488.702C665.004 363.867 612.156 206.847 483.554 137.988C354.953 69.129 199.296 114.506 135.886 239.341C72.4752 364.175 125.323 521.195 253.924 590.054Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+              opacity="0.01"
+            ></path>
+          </svg>
+        </div>
+      </section>
+      <!-- News and Updates + Merch CTA -->
+      <div class="bg-secondary mb-5 pt-5">
+        <!-- Recent News and Updates -->
+        <section class="container mb-5 py-lg-5">
+          <h2 class="h1 mb-4 pb-3 text-center">Recent News & Updates</h2>
+          <div class="row">
+            <div class="col-lg-5 col-12 mb-lg-0 mb-4">
+              <!-- Article -->
+              <article class="card h-100 border-0 shadow-sm">
+                <div class="position-relative">
+                  <a
+                    aria-label="BitBoy Crypto Channel"
+                    class="position-absolute top-0 start-0 w-100 h-100"
+                    href="https://www.youtube.com/watch?v=gEAI1BGjyDI"
+                    target="_blank"
+                  ></a>
+                  <a
+                    class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3"
+                    data-bs-placement="left"
+                    data-bs-toggle="tooltip"
+                    href="https://www.youtube.com/@BitBoyCryptoChannel"
+                    target="_blank"
+                    title="BitBoy Crypto Channel"
+                  >
+                    <i class="bx bxl-youtube"></i>
+                  </a>
+                  <img
+                    alt="article"
+                    class="card-img-top img-fluid first-article"
+                    src="./assets/img/news/articles/article9.jpeg"
+                  />
+                </div>
+                <div class="card-body pb-4">
+                  <div
+                    class="d-flex align-items-center justify-content-between mb-3"
+                  >
+                    <a
+                      class="badge fs-sm text-nav bg-secondary text-decoration-none"
+                      >$BEN</a
+                    >
+                    <span class="fs-sm text-muted">Jun 13, 2023</span>
+                  </div>
+                  <h3 class="h5">
+                    <a
+                      href="https://www.youtube.com/watch?v=gEAI1BGjyDI"
+                      target="_blank"
+                      >HUGE $BEN Coin Update (Crypto Adoption Campaign
+                      COMING)</a
+                    >
+                  </h3>
+                  <p>
+                    Here's the latest update on $BEN coin. Crypto adoption is
+                    underway.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <!-- Article -->
+              <article class="card border-0 shadow-sm overflow-hidden mb-4">
+                <div class="row g-0">
+                  <div
+                    class="col-sm-5 position-relative bg-position-center bg-repeat-0 bg-size-cover"
+                    style="
+                      background-image: url(assets/img/news/articles/article4.png);
+                      min-height: 15rem;
+                    "
+                  >
+                    <a
+                      class="position-absolute top-0 start-0 w-100 h-100"
+                      href="https://cryptotvplus.com/2023/05/ben-coin-roadmap-revealed-visa-microsoft-join-brazilian-cbdc-pilot-more/"
+                      target="blank"
+                    ></a>
+                    <a
+                      class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3 overflow-hidden"
+                      data-bs-placement="left"
+                      data-bs-toggle="tooltip"
+                      href="https://cryptotvplus.com/"
+                      target="_blank"
+                      title="Cryptotvplus"
+                    >
+                      <img
+                        alt="Cryptotvplus logo"
+                        src="./assets/img/news/logos/cryptotvplus.jpg"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-sm-7">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center mb-3">
+                        <a
+                          class="badge fs-sm text-nav bg-secondary text-decoration-none"
+                          >Roadmap</a
+                        >
+                        <span class="fs-sm text-muted border-start ps-3 ms-3"
+                          >May 29, 2023</span
+                        >
+                      </div>
+                      <h3 class="h5">
+                        <a
+                          href="https://cryptotvplus.com/2023/05/ben-coin-roadmap-revealed-visa-microsoft-join-brazilian-cbdc-pilot-more/"
+                          target="blank"
+                          >Game-Changing BEN Coin Roadmap Revealed!</a
+                        >
+                      </h3>
+                      <p>
+                        Welcome to last week’s news update on CryptoTvplus. We
+                        bring you the latest headlines, including BitBoy’s
+                        unveiling of the Ben coin roadmap.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <!-- Article -->
+              <article class="card border-0 shadow-sm overflow-hidden">
+                <div class="row g-0">
+                  <div
+                    class="col-sm-5 position-relative bg-position-center bg-repeat-0 bg-size-cover"
+                    style="
+                      background-image: url(assets/img/news/articles/article7.jpeg);
+                      min-height: 15rem;
+                    "
+                  >
+                    <a
+                      class="position-absolute top-0 start-0 w-100 h-100"
+                      href="https://moralismoney.com/blog/exploring-ben-coin-will-the-ben-token-10x"
+                      target="_blank"
+                    ></a>
+                    <a
+                      class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3 overflow-hidden"
+                      data-bs-placement="left"
+                      data-bs-toggle="tooltip"
+                      href="https://moralismoney.com/"
+                      target="_blank"
+                      title="Moralis Money"
+                      ><img
+                        alt="Moralis Money logo"
+                        src="./assets/img/news/logos/moralismoney.svg"
+                    /></a>
+                  </div>
+                  <div class="col-sm-7">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center mb-3">
+                        <a
+                          class="badge fs-sm text-nav bg-secondary text-decoration-none"
+                          >$BEN</a
+                        >
+                        <span class="fs-sm text-muted border-start ps-3 ms-3"
+                          >May 26, 2023</span
+                        >
+                      </div>
+                      <h3 class="h5">
+                        <a
+                          href="https://moralismoney.com/blog/exploring-ben-coin-will-the-ben-token-10x"
+                          target="_blank"
+                          >Exploring BEN Coin – Will the BEN Token 10x?</a
+                        >
+                      </h3>
+                      <p>
+                        The BEN token is one of many memecoins that broke out in
+                        the second quarter of 2023. However, while many of those
+                        ERC20 tokens had a short-lived initial pump and then
+                        stayed down, BEN managed to recover.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 mt-4 pt-lg-4 pt-3 text-center">
+              <a class='btn btn-lg btn-outline-primary w-sm-auto w-100' href='/news'>View All News & Updates</a
+              >
+            </div>
+          </div>
+        </section>
+        <section
+          class="container pt-3 pb-4 pb-md-5"
+          style="
+            margin-top: -156px;
+            margin-bottom: 120px;
+            transform: translateY(156px);
+          "
+        >
+          <div class="bg-merch rounded-3 overflow-hidden">
+            <div class="row align-items-center">
+              <div class="col-xl-4 col-md-5 offset-lg-1">
+                <div
+                  class="pt-5 pb-3 pb-md-5 pb-lg-0 px-4 px-lg-0 px-xl-0 text-center text-md-start"
+                >
+                  <h1 class="merch-text pb-3 pb-sm-4">
+                    Represent <span class="text-primary">$BEN</span><br />Across
+                    the Globe<br />Be Everywhere Now!
+                  </h1>
+                  <a
+                    class="btn btn-gradient btn-lg"
+                    href="https://www.joinbencoin.com"
+                    >Shop Merch
+                    <i class="bx bx-link-external fs-lg me-n1 ms-2"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-7 offset-xl-1">
+                <div
+                  class="position-relative d-flex flex-column align-items-center justify-content-center h-100"
+                >
+                  <svg
+                    class="d-none d-md-block position-absolute top-50 start-0 translate-middle-y"
+                    height="868"
+                    style="min-width: 868px"
+                    viewbox="0 0 868 868"
+                    width="868"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="434"
+                      cy="434"
+                      fill="#1E202C"
+                      opacity="100"
+                      r="434"
+                    ></circle>
+                  </svg>
+                  <img
+                    alt="merch"
+                    class="position-relative zindex-3 mb-2 my-lg-4"
+                    src="./assets/img/homepage/merch.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-4 pb-lg-5 mt-2 mt-md-0">
+      <div class="container pt-lg-4">
+        <div class="row pb-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+              <img alt="BENCOIN" src="./assets/img/logo.svg" width="34" /><span
+                class="ben-text"
+                >BEN</span
+              ><span class="coin-text">COIN</span>
+            </div>
+            <p class="fs-sm pb-lg-3 mb-4">
+              The content on this website is for informational purposes only and
+              should not be considered as financial or investment advice. Please
+              consult with professionals and conduct thorough research before
+              making any investment decisions.
+            </p>
+            <div
+              class="d-flex flex-wrap d-inline-flex align-items-center position-relative w-100"
+            >
+              <a
+                class="btn btn-icon btn-secondary btn-twitter rounded-circle me-3 mb-2"
+                href="https://twitter.com/joinBENCoin"
+                target="_blank"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a
+                class="btn btn-icon btn-secondary btn-discord rounded-circle me-3 mb-2"
+                href="https://discord.gg/joinbencoin"
+                target="_blank"
+              >
+                <i class="bx bxl-discord"></i>
+              </a>
+              <a
+                class="btn btn-icon btn-secondary btn-telegram rounded-circle me-3 mb-2"
+                href="https://t.me/JoinBenCoinOfficial"
+                target="_blank"
+              >
+                <i class="bx bxl-telegram"></i>
+              </a>
+              <a
+                class="btn btn-icon btn-secondary btn-instagram rounded-circle me-3 mb-2"
+                href="https://www.instagram.com/joinbencoin/"
+                target="_blank"
+              >
+                <i class="bx bxl-instagram"></i>
+              </a>
+              <a
+                  class="btn btn-icon btn-secondary btn-facebook rounded-circle mx-2 mb-2"
+                  href="https://www.facebook.com/joinbencoin/"
+                  target="_blank"
+                >
+                  <i class="bx bxl-facebook"></i>
+                </a>
+              <a
+                class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-3 mb-2"
+                href="https://www.linkedin.com/company/joinbencoin/"
+                target="_blank"
+              >
+                <i class="bx bxl-linkedin"></i>
+              </a>
+              <a
+                class="btn btn-icon btn-secondary btn-medium rounded-circle me-3 mb-2"
+                href="https://medium.com/@joinbencoin"
+                target="_blank"
+              >
+                <i class="bx bxl-medium"></i>
+              </a>
+              <!-- <a href="#" class="btn btn-icon btn-secondary btn-youtube rounded-circle me-3 mb-2">
+                        <i class="bx bxl-youtube"></i>
+                        </a> -->
+              <!-- <a href="https://www.reddit.com/r/joinbencoin" target="_blank" class="btn btn-icon btn-secondary btn-reddit rounded-circle mx-2 mb-2">
+                        <i class="bx bxl-reddit"></i>
+                        </a> -->
+            </div>
+          </div>
+          <div
+            class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0"
+          >
+            <div class="row" id="footer-links">
+              <div class="col-lg-4 mt-lg-n2">
+                <h6 class="mb-2">
+                  <a
+                    class="d-block text-dark dropdown-toggle d-lg-none py-2"
+                    data-bs-toggle="collapse"
+                    href="#main-directory"
+                    >Main Directory</a
+                  >
+                </h6>
+                <div
+                  class="collapse d-lg-block"
+                  data-bs-parent="#footer-links"
+                  id="main-directory"
+                >
+                  <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                    <li class="nav-item">
+                      <a class='nav-link d-inline-block px-0 pt-1 pb-2 pt-lg-0' href='/'>Homepage</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class='nav-link d-inline-block px-0 pt-1 pb-2' href='/foundation'>Foundation</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class='nav-link d-inline-block px-0 pt-1 pb-2' href='/community'>Community</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class='nav-link d-inline-block px-0 pt-1 pb-2' href='/news'>News/Updates</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class='nav-link d-inline-block px-0 pt-1 pb-2' href='/faqs'>FAQs</a
+                      >
+                    </li>
+                  </ul>
+                  <!-- <ul class="nav flex-column mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Terms &amp; Conditions</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Privacy Policy</a>
+                                        </li>
+                                    </ul> -->
+                </div>
+              </div>
+              <div class="col-lg-4 mt-lg-n2">
+                <h6 class="mb-2">
+                  <a
+                    class="d-block text-dark dropdown-toggle d-lg-none py-2"
+                    data-bs-toggle="collapse"
+                    href="#extra-links"
+                    >Extra Links</a
+                  >
+                </h6>
+                <div
+                  class="collapse d-lg-block"
+                  data-bs-parent="#footer-links"
+                  id="extra-links"
+                >
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class='nav-link d-inline-block px-0 pt-1 pb-2 pt-lg-0' href='/litepaper'>Litepaper</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link d-inline-block px-0 pt-1 pb-2"
+                        href="https://linktr.ee/joinBENNation"
+                        target="_blank"
+                        >Linktree</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class='nav-link d-inline-block px-0 pt-1 pb-2' href='/join'>Join the BCC</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link d-inline-block px-0 pt-1 pb-2"
+                        href="https://www.joinbencoin.com"
+                        >Join $BEN Coin</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 pt-2 pt-lg-0">
+                <h6 class="mb-2">Contact Us</h6>
+                <a
+                  class="fw-medium text-decoration-none"
+                  href="mailto:hi@joinbencoin.com?subject=Hi"
+                  >hi@joinbencoin.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <p
+          class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0"
+        >
+          &copy; 2023 $BEN Coin Collective. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- Back to top button -->
+    <a class="btn-scroll-top" data-scroll="" href="#top">
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+    <!-- Vendor Scripts -->
+    <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="./assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+    <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="./assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+    <script src="./assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/vendor/shufflejs/dist/shuffle.min.js"></script>
+    <!-- Custom Script -->
+    <script src="./assets/js/theme.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <script src="./a8b15c10-07ee-4a90-8571-5449a1f1e517.js"></script>
+  </body>
+</html>
